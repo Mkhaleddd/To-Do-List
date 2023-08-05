@@ -303,7 +303,9 @@ right: 20px;
 .toggler {
   font-family: var(--font-family-serif);
   display: flex;
-  align-items: center;  
+  align-items: center; 
+  position: relative;
+  right: 30px; 
 }
 
 .toggler p {
