@@ -2,6 +2,8 @@ import React, { useState,useRef,useEffect} from 'react'
 import ToDoList from './Compontents/ToDoList'
 import {nanoid} from 'nanoid'
 import click from './assets/click.mp3'
+import lightWave from './assets/layered-waves-haikei-light.png';
+import darkWave from './assets/layered-waves-haikei-dark.png';
 import './App.css'
 
 function App() {
@@ -37,8 +39,8 @@ function toggle(id) {
     Sound()}
 
   return (
-  <main className={darkMode?'dark':''}>    
-       <div className="toggler">
+     <main className={darkMode?'dark':''}>  
+      <div className="toggler">
                 <p className="toggler--light">Light</p>
                 <div
                     className="toggler--slider"
@@ -56,6 +58,7 @@ function toggle(id) {
     {tasks.length==1?(`${tasks.filter(t=>!t.complete).length} task to complete`):
     (`${tasks.filter(t=>!t.complete).length} tasks to complete`)}
     </div>
+   {!darkMode? <img src={lightWave} alt="waves" /> : <img src={darkWave} alt="waves" />}
   </main>
   ) 
 }
