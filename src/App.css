@@ -58,6 +58,7 @@ right: 20px;
  -moz-width:fit-content;
   width: fit-content;
   transition: color 0.3s ease;
+  margin-right: 10px;
 }
 .checkbox-wrapper-11 label::before,
 .checkbox-wrapper-11 label::after {
@@ -373,10 +374,9 @@ right: 20px;
 }
 
 button{
+background-color: #ffffff;
 width: 80px;
 height: 30px;
-color: black;
-background: #000;
 font-size: 14px;
 text-decoration: none;
 margin: 15px;
@@ -386,6 +386,8 @@ justify-content: center;
 transition: 0.5s;
 position: relative;
 }
+
+
 .btn1:hover{
   background: transparent;
   border: 2px solid #000;
@@ -398,7 +400,7 @@ position: relative;
   color:#000;
   padding: 5px;
 }
-  .btn1::after{
+.btn1::after{
   content:'';
   width: 100%;
   height: 100%;
@@ -407,7 +409,7 @@ position: relative;
   top: 0;
   left: 0;
   }
-  .btn1::after{
+.btn1::after{
     content:'';
     width: 100%;
     height: 100%;
@@ -418,16 +420,16 @@ position: relative;
     box-sizing: border-box;
     transition: top 0.5s, left 0.5s;
   }
-  .dark .btn1::after{
+.dark .btn1::after{
 
     border:2px solid #000;
-    }
-    .dark .btn1::after{
+    } 
+.dark .btn1::after{
   
       border:2px solid rgb(255, 252, 252);
       
     }
-    .btn1:hover::after{
+.btn1:hover::after{
     top: 5px;
     left: 5px;
     box-sizing: content-box;
@@ -435,9 +437,10 @@ position: relative;
 
 .btn2:hover{
 background: transparent;
-color: #000;}
+color: #000;
+}
 
- .dark .btn2:hover{
+.dark .btn2:hover{
   background: #FFFFFF;
   color: #000000;}
 
