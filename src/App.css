@@ -1,12 +1,12 @@
-
+i
 :root{
-
 --font-family-sans: 'Lato', sans-serif;
 --font-family-serif: 'Playfair Display', serif;
 }
 body{ 
 position: relative;
 min-height: 100vh;
+background-color: #8d8888!important;
 font-family: var(--font-family-sans);
 }
 main{
@@ -29,7 +29,7 @@ img{
   position: relative;
   bottom: 0;
   width: 100%;
-  height: 50%;
+  overflow-x: hidden;
 }
 input[type=text]{
 position: relative;
@@ -296,7 +296,7 @@ right: 20px;
 }
 /* ////////////////////////////                               //////////////////////////////////// */
 .dark{
-  background-color: #000000; 
+background-color: #000;
   color:white;
   transition: background-color 0.5s ease-in-out;
 }
@@ -422,13 +422,10 @@ position: relative;
   }
 .dark .btn1::after{
 
-    border:2px solid #000;
+    border:2px solid #ffffff;
     } 
-.dark .btn1::after{
-  
-      border:2px solid rgb(255, 252, 252);
-      
-    }
+
+    
 .btn1:hover::after{
     top: 5px;
     left: 5px;
@@ -441,7 +438,7 @@ color: #000;
 }
 
 .dark .btn2:hover{
-  background: #FFFFFF;
+  background: transparent;
   color: #000000;}
 
 .btn2::before, .btn2::after{
@@ -461,7 +458,7 @@ border-top: 2px solid #000;}
 border-right: 2px solid #000;
 border-bottom: 2px solid #000;}
 .dark .btn2::before{
-  border-left: 2px solid #fffcfc;
+  border-left: 2px solid #ffffff;
   border-top: 2px solid #ffffff;}
   .dark .btn2::after{
   border-right: 2px solid #ffffff;
@@ -474,7 +471,7 @@ left:
 .btn2:hover::after{
 top: 5px;
 left: 15px;}
-.btn2,.btn2:active,.btn2:focus,.btn1,.btn1:active,.btn1:focus{
+.btn2:active,.btn2:focus,.btn1,.btn1:active,.btn1:focus{
   border: none;
 }
 	

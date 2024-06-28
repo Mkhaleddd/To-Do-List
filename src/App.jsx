@@ -39,7 +39,7 @@ function toggle(id) {
     Sound()}
 
   return (
-     <main className={darkMode?'dark':''}>  
+     <main className={darkMode?'dark':'' }>  
       <div className="toggler">
                 <p className="toggler--light">Light</p>
                 <div
